@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>staubichsauger</title>
+    <link>/</link>
+    <description>Recent content on staubichsauger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2020 staubichsauger</copyright>
+    <lastBuildDate>Sat, 31 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hello World! I&amp;rsquo;m Tim, aka staubichsauger. I have a Bachelors degree in Computer Science and I&amp;rsquo;m currently on track towards my Masters degree.
+Linux (I use Arch by the way - and Debian), Go, and Containers are my main interests. I also play around with Arduino-based projects and music technology.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>/posts/hello/</link>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hello/</guid>
+      <description>Test
+ Test
+  Test 1 Test 2  </description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>/showcase/</link>
+      <pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/showcase/</guid>
+      <description>TODO </description>
+    </item>
+    
+  </channel>
+</rss>
