@@ -7,7 +7,8 @@ or navigate a professional live-plugin host during the show.</p><p>The operators
 week, such as building the setlist and assigning a key to each song.</p><p>That is why I created
 <a href=https://github.com/staubichsauger/simple-au-host>SimpleAUHost</a>.</p><p>SimpleAUHost is a native macOS Audio Unit host designed around prepared live
 shows. It separates the work of configuring a show from the smaller set of
-controls needed to operate it reliably.</p><h2 id=low-latency-tuning-and-broadcast-processing-together>Low-latency tuning and broadcast processing together<a href=#low-latency-tuning-and-broadcast-processing-together class=hanchor arialabel=Anchor>#</a></h2><p>Live tuning needs low latency. A broadcast or livestream mastering chain can be
+controls needed to operate it reliably.</p><p><img src=/img/simple-au-host/perform.jpg alt="SimpleAUHost Perform view with two tuning tracks, show management, an editable three-song setlist, and centralized key controls"></p><p><em>The Perform view combines tuning strength, show loading, setlist navigation,
+key staging, and apply controls.</em></p><h2 id=low-latency-tuning-and-broadcast-processing-together>Low-latency tuning and broadcast processing together<a href=#low-latency-tuning-and-broadcast-processing-together class=hanchor arialabel=Anchor>#</a></h2><p>Live tuning needs low latency. A broadcast or livestream mastering chain can be
 much heavier, but its latency is usually less critical.</p><p>Running both through one conventional processing buffer creates an unnecessary
 compromise: increasing the buffer to keep the mastering chain stable also makes
 the tuning path slower, while keeping everything at a very small buffer risks
@@ -15,7 +16,8 @@ dropouts in the heavier chain.</p><p>SimpleAUHost solves this with per-track lat
 cadence.</li><li><strong>Buffered</strong> gives more demanding tracks larger internal processing blocks.</li><li><strong>Broadcast/Post</strong> provides the largest blocks and safety preroll for
 non-critical broadcast and mastering paths.</li></ul><p>This means a realtime vocal tuning path and a heavy livestream mastering chain
 can run alongside each other without forcing both tracks to use the same
-latency tradeoff.</p><h2 id=technical-setup-by-an-expert-weekly-operation-by-volunteers>Technical setup by an expert, weekly operation by volunteers<a href=#technical-setup-by-an-expert-weekly-operation-by-volunteers class=hanchor arialabel=Anchor>#</a></h2><p>A complete show can contain its device configuration, tracks, channel routing,
+latency tradeoff.</p><p><img src=/img/simple-au-host/latency-setup.jpg alt="SimpleAUHost latency setup with separate realtime, buffered, and broadcast processing block sizes"></p><p><em>Each processing path gets its own latency and stability tradeoff instead of
+forcing every track to share the same buffer size.</em></p><h2 id=technical-setup-by-an-expert-weekly-operation-by-volunteers>Technical setup by an expert, weekly operation by volunteers<a href=#technical-setup-by-an-expert-weekly-operation-by-volunteers class=hanchor arialabel=Anchor>#</a></h2><p>A complete show can contain its device configuration, tracks, channel routing,
 latency classes, plugin chains, and tuning setlist. Chain and parameter presets
 make known-good technical configurations reusable.</p><p>An audio expert can prepare the routing and processing once. Operators can then
 load that setup and handle the parts that change for each event—especially the
