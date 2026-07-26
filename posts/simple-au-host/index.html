@@ -41,15 +41,32 @@ supported tuning plugins.</p><p>The song list is a straightforward alternative t
 snapshot for every song and every possible tuning state. It keeps the weekly
 setlist and its keys inside the show while leaving the expert-prepared audio
 configuration intact.</p><p>Keys can still be staged and applied manually when the setlist changes or the
-operator needs to deviate from the prepared order.</p><h2 id=first-class-stream-deck-control>First-class Stream Deck control<a href=#first-class-stream-deck-control class=hanchor arialabel=Anchor>#</a></h2><p>I did not want tuning control to depend on workarounds or require operators to
-open plugin interfaces during the show.</p><p>SimpleAUHost therefore includes a local control API and a dedicated
-<a href=https://bitfocus.io/companion>Bitfocus Companion</a> module for Stream Deck
-workflows. It exposes the actual tuning and setlist operations directly,
-including:</p><ul><li>Tune on, off, and toggle</li><li>Staging and applying a musical key</li><li>Separate note, accidental, and scale controls</li><li>Panic</li><li>Next and previous song</li><li>Feedback for the active and staged keys, engine state, song name, and setlist
+operator needs to deviate from the prepared order.</p><h2 id=centralized-tuning-control>Centralized tuning control<a href=#centralized-tuning-control class=hanchor arialabel=Anchor>#</a></h2><p>SimpleAUHost provides dedicated parameter-level integration with
+<a href=https://www.waves.com/plugins/waves-tune-real-time>Waves Tune Real-Time</a>.</p><p>When supported tuning plugins are loaded on tracks, the Perform view brings
+their essential live controls into one place. Operators can manage tuning
+on/off, musical key and scale, tuning strength, the current song, and the
+prepared setlist without opening each plugin interface.</p><p>SimpleAUHost maps those controls directly to the relevant Waves Tune Real-Time
+parameters, including bypass, Scale Root, Scale Type, Tune Speed, and Note
+Transition. Selecting a song, applying a staged key, or changing the tuning
+strength updates the recognized plugin instances directly instead of recalling
+generic plugin snapshots.</p><p>Support for
+<a href=https://github.com/staubichsauger/simple-live-tune>Simple Live Tune</a> is also
+built into this centralized workflow. SimpleAUHost maps the same operator
+controls to its bypass, key, scale, retune-speed, and note-transition
+parameters. Simple Live Tune is still in development and has not been released
+yet, so this integration is currently available for development and testing
+rather than as a downloadable end-user plugin.</p><h2 id=first-class-stream-deck-control>First-class Stream Deck control<a href=#first-class-stream-deck-control class=hanchor arialabel=Anchor>#</a></h2><p>The centralized tuning state is also available through SimpleAUHost&rsquo;s local
+control API and dedicated
+<a href=https://bitfocus.io/companion>Bitfocus Companion</a> module. This makes Stream
+Deck an optional extension of the Perform workflow: the controls in the app and
+on the control surface operate the same tuning state, setlist, and supported
+plugin instances. Available operations include:</p><ul><li>Tune on, off, and toggle</li><li>Staging and applying a musical key</li><li>Separate note, accidental, and scale controls</li><li>Panic</li><li>Next and previous song</li><li>Feedback for the active and staged keys, engine state, song name, and setlist
 position</li></ul><p>A Stream Deck can therefore show what is currently active and what comes next,
 while giving a volunteer a focused set of controls for operating the show.</p><h2 id=what-else-it-can-do>What else it can do<a href=#what-else-it-can-do class=hanchor arialabel=Anchor>#</a></h2><ul><li>Run multiple mono or stereo tracks through one audio interface</li><li>Route each track from selected hardware inputs to selected outputs</li><li>Host installed Audio Unit effects in per-track insert chains</li><li>Open embedded plugin editors</li><li>Save sessions, chain presets, and parameter presets</li><li>Show diagnostics for dropouts, callback timing, buffers, and worker load</li></ul><p>SimpleAUHost requires macOS 14 Sonoma or newer. The app is currently unsigned,
 so macOS may ask you to approve it in Privacy & Security on first launch.</p><p>Download the current app and Companion module from the
 <a href=https://github.com/staubichsauger/simple-au-host/releases/latest>latest release</a>,
 or browse the
-<a href=https://github.com/staubichsauger/simple-au-host>source and documentation</a>.</p></div></div></article></div><footer class=footer><div class=footer__inner><div class="copyright copyright--user"><span>2020–2026 staubichsauger</span>
+<a href=https://github.com/staubichsauger/simple-au-host>source and documentation</a>.</p><p>Waves and Waves Tune Real-Time are trademarks of Waves Audio Ltd. SimpleAUHost
+is an independent project and is not affiliated with, sponsored by, or endorsed
+by Waves Audio Ltd.</p></div></div></article></div><footer class=footer><div class=footer__inner><div class="copyright copyright--user"><span>2020–2026 staubichsauger</span>
 <span>:: <a href=https://github.com/panr/hugo-theme-terminal target=_blank>Theme</a> made by <a href=https://github.com/panr target=_blank>panr</a></span></div></div></footer><script type=text/javascript src=/bundle.min.js></script></div></body></html>
