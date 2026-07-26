@@ -1,21 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on staubichsauger</title><link>/posts/</link><description>Recent content in Posts on staubichsauger</description><generator>Hugo</generator><language>en-US</language><copyright>2020–2026 staubichsauger</copyright><lastBuildDate>Sun, 26 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>SimpleAUHost: a lightweight live Audio Unit host for macOS</title><link>/posts/simple-au-host/</link><pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate><guid>/posts/simple-au-host/</guid><description>&lt;p&gt;Sometimes a full DAW is more than a live setup needs. I wanted a small, focused
-tool that could take audio from an interface, run it through Audio Unit effects,
-and send it back out with predictable routing. That became
-&lt;a href="https://github.com/staubichsauger/simple-au-host"&gt;SimpleAUHost&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;SimpleAUHost is a native macOS live audio rack. It uses Core Audio directly,
-hosts installed Audio Unit effects, and keeps the workflow centered on tracks,
-routing, and plugin chains.&lt;/p&gt;
-&lt;h2 id="what-it-can-do"&gt;What it can do&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Run multiple mono or stereo tracks through one audio interface&lt;/li&gt;
-&lt;li&gt;Route each track from selected hardware inputs to selected outputs&lt;/li&gt;
-&lt;li&gt;Build per-track Audio Unit insert chains&lt;/li&gt;
-&lt;li&gt;Choose realtime, buffered, or broadcast processing per track&lt;/li&gt;
-&lt;li&gt;Open embedded plugin editors&lt;/li&gt;
-&lt;li&gt;Save complete sessions, reusable chain presets, and parameter presets&lt;/li&gt;
-&lt;li&gt;Show diagnostics for dropouts, callback timing, buffers, and worker load&lt;/li&gt;
-&lt;li&gt;Control tune workflows locally from Bitfocus Companion&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Enabled tracks get exclusive output channels, so conflicting routes are caught
-before the audio engine starts. Sessions and presets live in &lt;code&gt;~/Music/SAH&lt;/code&gt;,
-making setups easy to find and back up.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on staubichsauger</title><link>/posts/</link><description>Recent content in Posts on staubichsauger</description><generator>Hugo</generator><language>en-US</language><copyright>2020–2026 staubichsauger</copyright><lastBuildDate>Sun, 26 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>SimpleAUHost: live tuning without the pro-audio workflow</title><link>/posts/simple-au-host/</link><pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate><guid>/posts/simple-au-host/</guid><description>&lt;p&gt;Live tuning is usually built with professional audio tools. Those tools are
+powerful, but they also expose a lot of complexity that should not have to be
+managed by every person operating a live event.&lt;/p&gt;
+&lt;p&gt;I wanted an expert to be able to prepare the audio routing, tuning plugins,
+presets, processing chains, and Stream Deck controls ahead of time—and then hand
+the finished technical setup to volunteers who should not need to learn a DAW
+or navigate a professional live-plugin host during the show.&lt;/p&gt;</description></item></channel></rss>
